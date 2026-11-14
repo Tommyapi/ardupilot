@@ -67,6 +67,7 @@
 #include "AP_RangeFinder_LightWare_GRF_I2C.h"
 #include "AP_RangeFinder_DTS6012M.h"
 #include "AP_RangeFinder_ERDI.h"
+#include "AP_RangeFinder_ERDI_E2.h"
 
 #include <AP_BoardConfig/AP_BoardConfig.h>
 #include <AP_Logger/AP_Logger.h>
@@ -663,6 +664,12 @@ __INITFUNC__ void RangeFinder::detect_instance(uint8_t instance, uint8_t& serial
         serial_create_fn = AP_RangeFinder_ERDI::create_H;
         break;
 #endif // AP_RANGEFINDER_ERDI_ENABLED
+
+#if AP_RANGEFINDER_ERDI_E2_ENABLED
+    case Type::ERDI_E2:
+        serial_create_fn = AP_RangeFinder_ERDI_E2::create;
+        break;
+#endif // AP_RANGEFINDER_ERDI_E2_ENABLED
 
     case Type::NONE:
         break;

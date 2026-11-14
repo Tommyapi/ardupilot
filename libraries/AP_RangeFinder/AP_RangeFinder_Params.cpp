@@ -66,6 +66,7 @@ const AP_Param::GroupInfo AP_RangeFinder_Params::var_info[] = {
     // @Values: 48:LightWare-GRF-I2C
     // @Values: 49:ERDI-VB-Serial
     // @Values: 50:ERDI-H-Serial
+    // @Values: 51:ERDI-E2-Serial
     // @Values: 100:SITL
     // @User: Standard
     AP_GROUPINFO_FLAGS("TYPE", 1, AP_RangeFinder_Params, type, 0, AP_PARAM_FLAG_ENABLE),

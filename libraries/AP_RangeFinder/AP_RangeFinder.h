@@ -202,6 +202,9 @@ public:
         ERDI_VB = 49,
         ERDI_H = 50,
 #endif // AP_RANGEFINDER_ERDI_ENABLED
+#if AP_RANGEFINDER_ERDI_E2_ENABLED
+        ERDI_E2 = 51,
+#endif // AP_RANGEFINDER_ERDI_E2_ENABLED
 #if AP_RANGEFINDER_SIM_ENABLED
         SIM = 100,
 #endif
