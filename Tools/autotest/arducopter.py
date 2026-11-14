@@ -16255,6 +16255,7 @@ class AutoTestCopter(vehicle_test_suite.TestSuite):
             ("dts6012m", 47),
             ("erdi_vb", 49),
             ("erdi_h", 50),
+            ("erdi_e2", 51),
         ]
         # you can use terrain - if you don't the vehicle just uses a
         # plane based on home.
